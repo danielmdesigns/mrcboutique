@@ -1,0 +1,80 @@
+/* Sass Document */
+$brown: #906E57
+$tan: #EBDAC0
+$white: #fff
+$black: #333
+
+*
+  font-smooth: always
+  text-rendering: optimizeLegibility
+  text-rendering: geometricPrecision
+  font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: subpixel-antialiased
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  background-image: url('background.jpg')
+  box-sizing: border-box
+
+.container
+  max-width: 800px
+  margin: 0 auto
+  padding: 4rem
+  
+.logo
+  display: block
+  margin: 0 auto
+  text-align: center
+  
+h1, p, .button
+  font-family: 'Pacifico', cursive
+  
+h1, p
+  color: $black
+  text-align: center
+  margin: 4rem 0
+  font-size: 32px
+  @media (max-width: 767px)
+    font-size: 24px
+    
+.button
+  display: block
+  color: $black
+  background: $tan
+  padding: 20px
+  text-align: center
+  margin: 4rem auto
+  max-width: 250px
+  border-radius: 50px
+  text-decoration: none
+  font-size: 24px
+  transition: all 0.5s ease
+  &:hover
+    transform: scale(1.025)
+
+.item-container
+  display: flex
+  flex-direction: column
+  @media (min-width: 767px)
+    flex-direction: row
+  
+.item
+  width: 100%
+  margin-bottom: 20px
+  text-align: center
+  font-family: sans-serif
+  img
+    width: 100%
+    transition: all 0.5s ease
+    &:hover
+      transform: scale(1.025)
+  &:last-child
+    margin-bottom: 0
+  @media (min-width: 767px)
+    margin-bottom: 0
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
